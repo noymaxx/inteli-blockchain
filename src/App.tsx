@@ -5,9 +5,9 @@ import InputField from "./Components/inputField/InputField";
 import Button from "./Components/button/Button";
 import "./App.css";
 import "./index.css";
-import logo from "./assets/logo.svg";
-import wpp from "../src/assets/wpp.svg";
-import github from "../src/assets/github.svg";
+// import logo from "/assets/logo.svg";
+// import wpp from "../src/assets/wpp.svg";
+// import github from "../src/assets/github.svg";
 interface FormData {
     name: string;
     email: string;
@@ -44,7 +44,7 @@ const App: React.FC = () => {
           >
             <img
               alt="InteliBlockchain"
-              src={logo}
+              src="../src/assets/logo.svg"
               width={256}
               height={128}
               className="w-full mb-4"
@@ -109,7 +109,12 @@ const App: React.FC = () => {
             >
               <span className="text-sm text-gray-400 flex flex-row">
                 Todo o código pode ser encontrado aqui:{" "}
-                <img alt="GitHub" src={github} width={16} height={16} />
+                <img
+                  alt="GitHub"
+                  src="../src/assets/github.svg"
+                  width={16}
+                  height={16}
+                />
               </span>
             </a>
           </div>
@@ -120,7 +125,12 @@ const App: React.FC = () => {
             >
               <span className="text-sm text-gray-400 flex flex-row">
                 Caso tenha alguma dúvida:{" "}
-                <img alt="WhatsApp" src={wpp} width={16} height={16} />
+                <img
+                  alt="WhatsApp"
+                  src="../src/assets/wpp.svg"
+                  width={16}
+                  height={16}
+                />
               </span>
             </a>
           </div>
